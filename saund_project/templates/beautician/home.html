@@ -1,0 +1,446 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<head>
+   <title>Saundrya</title>
+   <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+   <link rel="stylesheet" type="text/css" href="{% static 'css/headfoot.css' %}"/>
+   <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}"/>
+   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+   <link rel="icon" href="{% static 'images/two1.png' %} type="image/png" sizes="32x32">
+   <script src="{% static 'js/wow.min.js' %}"></script>
+   <script type="text/javascript">
+      new WOW().init();
+   </script>
+</head>
+{% block body %}
+   <div id="nav">
+      <nav>
+         <div class="container">
+            <a href="#" class="logo" style="padding-left:20px;"><img src="{% static 'images/logo.png' %}" class="responsive-img"></a>
+            <a class="iconcollapse"><i class="fa fa-bars fa-2x" style="color: #8d2065; padding-left: 30px;"></i></a>
+            <ul class="nav-right">
+               <li><a href="#aboutus" class="dd1">About Us</a></li>
+               <li><a href="#whatwedo" class="dd1">What We Do</a></li>
+               <li><a href="#services" class="dd1">Services</a></li>
+               <li><a class="modal-trigger dd1" href="#login">Login</a></li>
+            </ul>
+         </div>
+         <div class="ll">
+            <div class="menu">
+               <ul>
+                <li><a href="#aboutus" class="dd1">About Us</a></li>
+                <li><a href="#whatwedo" class="dd1">What We Do</a></li>
+                <li><a href="#whatwedo" class="dd1">Services</a></li>
+                <li><a class="modal-trigger dd1" data-target="login">Login</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </div>
+   <div id="content">
+      <div class="slider">
+         <ul class="slides">
+            <li>
+               <img src="{% static 'images/slide2.png' %}" class="responsive-img">
+               <div class="caption left-align">
+          <h1>Left Aligned Caption</h1>
+          <br><br><br>
+          <a class="modal-trigger" data-target="register">
+            <button class="reg" type="submit">
+              <h2 align="center" class="dd4">Register Now</h2>
+            </button>
+          </a>
+        </div>
+            </li>
+         </ul>
+      </div>
+   </div>
+     <div style="background-color: #fff; margin-left: -10px; margin-right: -40px; width: 100vw;" id="aboutus">
+      <br>
+      <div class="row" style="width: 100%;">
+         <div class="col s12">
+            <h1 align="center" style="font-weight:bold; color: #8d2065; font-family: 'Lobster', sans-serif;">
+               About Us 
+               <hr style="width:5vw; height:0.5vh; color:#8d2065; background-color:#8d2065; border:#8d2065;">
+            </h1>
+         </div>
+      </div>
+      <div class="row wow animated flipInY aboutustext">
+         <div class="col s11 m11 l11 push-s1 push-m1 push-l1" align="center">
+            <div class="col s12 m4 l4">
+              <img src="{% static 'images/logo.png' %}" class="responsive-img time">
+            </div>
+            <div class="col s12 m8 l8" align="left">
+              <p class="text2">Here will be text regarding the company<br><br><br><br>Height will be adjusted as per image to be put.
+              </p>
+            </div>
+         </div>
+      </div>
+    </div>
+   </div>
+   <br>
+   <div id="whatwedo">
+      <br>
+      <div class="row" style="width: 100%;">
+         <div class="col s12">
+            <h1 align="center" style="font-weight:bold; color: #ffffec; font-family: 'Lobster', sans-serif;">
+               What We Do   
+               <hr style="width:5vw; height:0.3vh; color:#ffffec; background-color:#ffffec; border:#ffffec;">
+            </h1>
+         </div>
+      </div>
+      <div class="row wow animated flipInY">
+         <div class="col s11 m11 l11 push-s1 push-m1 push-l1" align="center">
+            <div class="col s12 m4 l4">
+              <img src="{% static 'images/services.png' %}" class="responsive-img time">
+              <p class="text1">Select Service</p>
+            </div>
+            <div class="col s12 m4 l4">
+              <img src="{% static 'images/selectbeautician.png' %}" class="responsive-img time">
+              <p class="text1">Select Beautician</p>
+            </div>
+            <div class="col s12 m4 l4">
+              <img src="{% static 'images/relax.png' %}" class="responsive-img time">
+              <p class="text1">Sit Back and Relax</p>
+            </div>
+         </div>
+         <div class="col s1"></div>
+      </div>
+      <br>
+    </div>
+    <div id="services">
+      <div class="row">
+         <div class="col s12">
+            <h1 align="center" style="font-weight:bold; color: #8d2065; font-family: 'Lobster', sans-serif;">
+               Services
+               <hr style="width:5vw; height:0.3vh; color:#8d2065; background-color:#8d2065; border:#8d2065;">
+            </h1>
+         </div>
+      </div>
+      <div class="row wow animated bounceInLeft">
+         <div class="col s12 m12 l12" align="center">
+            <div class="col s12 m3 l3">
+               <div class="first">
+                  <div align="center">
+                     <img src="{% static 'images/time.png' %}" class="responsive-img time">
+                     <img src="{% static 'images/time1.png' %}" class="responsive-img time1">
+                     <p class="text1" style="padding-bottom: 10px;">Text Here</p>
+
+                  </div>
+               </div>
+            </div>
+            <div class="col s12 m3 l3">
+               <div class="first">
+                  <div align="center">
+                     <img src="{% static 'images/time.png' %}" class="responsive-img time">
+                     <img src="{% static 'images/time1.png' %}" class="responsive-img time1">
+                     <p class="text1" style="padding-bottom: 10px;">Text Here</p>
+
+                  </div>
+               </div>
+               
+            </div>
+            <div class="col s12 m3 l3">
+               <div class="first">
+                  <div align="center">
+                     <img src="{% static 'images/time.png' %}" class="responsive-img time">
+                     <img src="{% static 'images/time1.png' %}"" class="responsive-img time1">
+                     <p class="text1" style="padding-bottom: 10px;">Text Here</p>
+
+                  </div>
+               </div>
+               
+            </div>
+            <div class="col s12 m3 l3">
+               <div class="first">
+                  <div align="center">
+                     <img src="{% static 'images/time.png' %}" class="responsive-img time">
+                     <img src="{% static 'images/time1.png' %}" class="responsive-img time1">
+                     <p class="text1" style="padding-bottom: 10px;">Text Here</p>
+
+                  </div>
+               </div>
+               
+            </div>
+            </div>
+            <div class="col s12 m12 l12 push- push-m2" align="center" style="padding-top: 10px;">
+            <div class="col s12 m3 l3">
+               <div class="second">
+                  <div align="center">
+                     <img src="{% static 'images/time.png' %}" class="responsive-img time">
+                     <img src="{% static 'images/time1.png' %}" class="responsive-img time1">
+                     <p class="text1" style="padding-bottom: 10px;">Text Here</p>
+
+                  </div>
+               </div>
+            </div>
+            <div class="col s12 m3 l3">
+               <div class="second">
+                  <div align="center">
+                     <img src="{% static 'images/time.png' %}" class="responsive-img time">
+                     <img src="{% static 'images/time1.png' %}" class="responsive-img time1">
+                     <p class="text1" style="padding-bottom: 10px;">Text Here</p>
+
+                  </div>
+               </div>
+               
+            </div>
+            <div class="col s12 m3 l3">
+               <div class="second">
+                  <div align="center">
+                     <img src="{% static 'images/time.png'  %}" class="responsive-img time">
+                     <img src="{% static 'images/time1.png' %}" class="responsive-img time1">
+                     <p class="text1" style="padding-bottom: 10px;">Text Here</p>
+
+                  </div>
+               </div>
+               
+            </div>
+            
+            </div>
+      </div>
+      </div>
+      <footer class="page-footer">
+         <div class="footer-copyright">
+            <div class="container1">
+               <span class="copy"> 2014 Copyright Text</span>
+               <div class="right copy1">
+                 <div class="col s12 m12 l12">
+                    <i class="fa fa-facebook facebook tooltip" style="margin-right: 10px;"><span class="tooltiptext">Facebook</span></i>
+                    <i class="fa fa-twitter tooltip" style="margin-right: 10px;"><span class="tooltiptext">Twitter</span></i>
+                    <i class="fa fa-instagram tooltip" style="margin-right: 10px;"><span class="tooltiptext">Instagram</span></i>
+                    <i class="fa fa-google-plus tooltip" style="margin-right: 10px;"><span class="tooltiptext">Google Plus</span></i>                
+                 </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div id="login" class="modal" style=" width: 35vw; position: fixed; height: auto;">
+         <div style="background-color: #8d2065; height: 70px;">
+            <h2 align="center" style="font-family: 'Amaranth', sans-serif; color: #fffed7; padding-top: 19px;">Login</h2>
+            <img src="{% static 'images/cross.png' %}" class="modal-close" style="height: 10px; float: right; position: absolute; top: 10px; right: 10px;">
+         </div>
+          <div class="modal-content" style="background-color: #fff;">
+              <div class="form">
+              <form>
+                  <span style=" font-family: 'Open Sans', sans-serif;">Username<sup >*</sup></span><br>
+                  <input type="text" id="username" placeholder="xyz@gmail.com" required>
+                  <br><br>
+                  <span style=" font-family: 'Open Sans', sans-serif; ">Password<sup >*</sup></span>
+                  <input type="password" placeholder="xyz@gmail.com" required id="password" class="pass">
+                  <i class="fa fa-eye" id="eye" style="margin-left: -25px;"></i>
+                  <div align="center">
+                  <a href="#">
+                     <button class="login1" type="submit">
+                        <h2 align="center" class="dd">Log In</h2>
+                     </button>
+                  </a>
+                  </div>
+               <br><br>
+              </form>
+              <div>
+                  <span style="font-size: 1.2vw; float: left; color: #8d2065;">
+                    <span class="modal-trigger modal-close" href="#forgot">Forgot Password / Username?</span>  <br>
+                  </span>
+               </div>
+            </div>    
+            <div align="center" class="or">
+            OR
+            </div>
+            <a href="#">
+              <button class="login13" type="submit">
+               <div class="col s12 m1 l1" align="center">
+                 <i class="fa fa-google-plus fa-2x ff1"></i>
+               </div>
+                <div class="col s12 m11 l11 hide-on-mobile">
+                 <p class="text4" align="center">Login with Facebook</p>
+               </div>  
+              </button>
+            </a>
+            <br><br>
+            <a>
+              <button class="login12" type="submit">
+                <div class="col s12 m1 l1" align="center">
+                <i class="fa fa-facebook fa-2x ff"></i>
+               </div>
+               <div class="col s12 m11 l11 hide-on-mobile">
+                 <p class="text4" align="center">Login with Facebook</p>
+               </div> 
+              </button>
+            </a>
+            <br><br>
+            <div class="register" type="submit">
+                 <p class="text3" align="center">Not a Member Yet? <span class="modal-trigger modal-close" href="#register"><span class="text3">Click Here</span></span> to Register</p>
+               </div>
+          </div>
+      </div>
+
+      <div id="forgot" class="modal" style=" width: 35vw; position: fixed; height: auto;">
+         <div style="background-color: #8d2065; height: 70px;">
+            <h2 align="center" style="font-family: 'Amaranth', sans-serif; color: #fffed7; padding-top: 19px;">Recover Account</h2>
+            <img src="{% static 'images/cross.png' %}" class="modal-close" style="height: 10px; float: right; position: absolute; top: 10px; right: 10px;">
+         </div>
+          <div class="modal-content" style="background-color: #fff;">
+              <div class="form">
+              <form>
+                  <span style=" font-family: 'Open Sans', sans-serif;">Email<sup >*</sup></span><br>
+                  <input type="text" id="username" placeholder="xyz@gmail.com" required>
+                  <br><br>
+                  <div align="center">
+                  <a href="#">
+                     <button class="submit" type="submit">
+                        <h2 align="center" class="dd3">Submit</h2>
+                     </button>
+                  </a>
+                  </div>
+               <br><br>
+              </form>
+              
+          </div>
+      </div>
+      </div>      
+
+   <div id="register" class="modal" style=" width: 54vw; height: auto; position: fixed; margin-top: -3.5%;">
+    <div style="background-color: #8d2065; height: 50px;width: 100%;">
+      <h2 align="center" style="font-family: 'Amaranth', sans-serif; color: #fffed7; padding-top: 9px;">Register</h2>
+      <img src="{% static 'images/cross.png' %}" class="modal-close" style="height: 10px; float: right; position: absolute; top: 10px; right: 10px;">
+    </div>
+   
+      <div class="container-fluid">
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Register for an Account</h3>
+                    {% if error_message %}
+                        <p><strong>{{ error_message }}</strong></p>
+                    {% endif %}
+                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% for field in form %}
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <span class="text-danger small">{{ field.errors }}</span>
+        </div>
+        <label class="control-label col-sm-2" for="song_title">{{ field.label_tag }}</label>
+        <div class="col-sm-10">{{ field }}</div>
+    </div>
+{% endfor %}
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    Already have an account? <a href="#">Click here</a> to log in.
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>  
+     
+     </div>
+   <script type="text/javascript" src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script type="text/javascript" src="{% static 'js/style.js' %}"></script>
+   <script>
+      $(document).ready(function(){
+      $('.slider').slider({full_width: true,
+      transition: 1000,});
+      $('.modal-trigger').leanModal(
+        {
+          dismissible: true,
+          opacity: .5, 
+            in_duration: 300, 
+            out_duration: 200,
+        });
+      $( ".cross" ).hide();
+      $( ".menu" ).hide();
+      $( ".iconcollapse" ).click(function() {
+      $( ".menu" ).slideToggle( "slow", function() {
+      $( ".iconcollapse" ).hide();
+      $( ".iconcollapse" ).show();
+      });
+      });
+      $(".reg").click(function(){
+          $("#login").hide();
+      });
+      $( ".cross" ).click(function() {
+      $( ".menu" ).slideToggle( "slow", function() {
+      $( ".cross" ).hide();
+      $( ".iconcollapse" ).show();
+      });
+      }); 
+      });
+   </script>
+   <script type="text/javascript">
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+   </script>
+   <script type="text/javascript">
+      var password = document.getElementById("password"),
+       confirm_password = document.getElementById("conpassword");
+      
+      function validatePassword() {
+       if (password.value != confirm_password.value) {
+         confirm_password.setCustomValidity("Passwords Don't Match");
+       } else {
+         confirm_password.setCustomValidity('');
+       }
+      }
+      password.onchange = validatePassword;
+      confirm_password.onkeyup = validatePassword;
+
+       document.getElementById("eye").addEventListener("click", function(e){
+        var password = document.getElementById("password");
+        var passwordregister = document.getElementById("passwordregister");
+        var conpassword = document.getElementById("conpassword");
+        if(password.getAttribute("type")=="password"){
+            password.setAttribute("type","text");
+        } else {
+            password.setAttribute("type","password");
+        }
+    });
+
+      document.getElementById("eye1").addEventListener("click", function(e){
+        var passwordregister = document.getElementById("passwordregister");
+
+        if(passwordregister.getAttribute("type")=="password"){
+            passwordregister.setAttribute("type","text");
+        } else {
+            passwordregister.setAttribute("type","password");
+        }
+    });
+
+      document.getElementById("eye2").addEventListener("click", function(e){
+        var conpassword = document.getElementById("conpassword");
+
+        if(conpassword.getAttribute("type")=="password"){
+            conpassword.setAttribute("type","text");
+        } else {
+            conpassword.setAttribute("type","password");
+        }
+    });
+
+   </script>
+{% endblock %}
+</html>
